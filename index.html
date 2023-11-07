@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-own-retro-futuristic-art</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container flex-space-between">
+                <div class="logo-button"><a href="#">JringguJinku</a></div>
+                <ul class="flex desktop-nav">
+                    <li><a href="#hero">Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#another">Another</a></li>
+                </ul>
+                <ul class="flex mobile-nav">
+                    <li><a href="#hero">Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#another">Another</a></li>
+                </ul>
+                <div class="stack-menu" onclick="navToggle()">Menu</div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex">
+        <div id="content">
+            <section id="hero">
+                <div class="background-container">
+                    <div class="container flex-space-between">
+                        <article class="w-75">
+                            <h2>Seorang Long life learner</h2>
+                            <p>Seorang pelajar yang mencintai explorasi, bahagia dalam menjadi generalis, dan berusaha untuk berkontribusi melalui seni ditangannya</p>
+                        </article>  
+                        <img src="assets/images/chun-myeong.jpeg" alt="" class="w-33 common-border">
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="background-container">
+                    <div class="container flex-space-between">
+                        <img src="assets/images/vagabond.jpeg" alt="" class="w-33 common-border">
+                        <article class="w-75">
+                            <h2>Tentang Diriku</h2>
+                            <p>Aku sangat menyukai pepatah <em>"Hardwork beat talent if talent doesnt work hard"</em>. Hanya seorang pemuda tanpa keajaiban, menyukai seni, pemrograman, filsafat, dan psikologi. Sangat menyenagnkan menyambungkan untaian tali pada hal hal tersebut.</p>
+                        </article>  
+                    </div>
+                </div>
+            </section>
+            <section id="project">
+                <h2>My Project</h2>
+                <div class="background-container">
+                    <div class="container flex-fwrap">
+                        <article class="w-sm-100 w-lg-50">
+                            <div class="container">
+                                <img src="assets/images/1.jpeg" alt="" class="responsive-image">
+                                <div class="text-container">
+                                    <p>Battle Bridge</p>
+                                    <p>Battle Bridge is minimalist endless shooter game. Built with C, and use SDL2 superpower.</p>
+                                    <a href="https://github.com/wiratana/battle-bridge" class="project-button">Let's Explore</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="w-sm-100 w-lg-50">
+                            <div class="container">
+                                <img src="assets/images/2.jpeg" alt="" class="responsive-image">
+                                <div class="text-container">
+                                    <p>Perfect Cross</p>
+                                    <p>Free Open Source Traffic Simulation game. Built using Godot, and use GDScript flexibility.</p>
+                                    <a href="https://github.com/wiratana/perfect-cross" class="project-button">Let's Explore</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="w-sm-100 w-lg-50">
+                            <div class="container">
+                                <img src="assets/images/3.jpeg" alt="" class="responsive-image">
+                                <div class="text-container">
+                                    <p>FitStudee</p>
+                                    <p>FitStudee is web application to help you get your physic dream, and use Next.js technology.</p>
+                                    <a href="https://github.com/wiratana/fitstudee-fe" class="project-button">Let's Explore</a>
+                                </div>
+                            </div>                            
+                        </article>
+                        <article class="w-sm-100 w-lg-50">
+                            <div class="container">
+                                <img src="assets/images/4.jpeg" alt="" class="responsive-image">
+                                <div class="text-container">
+                                    <p>BudgetBuddy</p>
+                                    <p>BudgetBuddy is mobile application to help you manage your money, and use kotlin power.</p>
+                                    <a href="https://github.com/wiratana/BudgetBuddy" class="project-button">Let's Explore</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="another">
+                <h2>My Favorite Book</h2>
+                <div class="background-container">
+                    <div class="container flex-fwrap">
+                        <article>
+                            <img src="assets/images/tasawuf.jpg" alt="">
+                            <p>Tasawuf Modern, By Buya Hamka</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/filosofi-teras.jpeg" alt="">
+                            <p>Filosofi Teras, By Henry Manampiring</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/atomic-habbit.jpg" alt="">
+                            <p>Atomic Habits, By James Clear</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/master-your-habbit.jpg" alt="">
+                            <p>How to Mastering Your Habbit, By Felix Y.Siauw</p>
+                        </article>
+                        <article>
+                            <img src="assets/images/headfirst-c.jpeg" alt="">
+                            <p>Head First C, By David Griffiths</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="hide-aside">
+            <button onclick="asideToggle()">Hide Aside Information ></button>
+        </div>  
+        <aside>
+            <section>
+                <div class="backgourd-container">
+                    <div class="container">
+                        <article id="card-id">
+                            <div class="img-contanier">
+                                <img src="assets/images/WIN_20230530_12_53_51_Pro.jpg" alt="" class="w-25 responsive-image common-border">
+                            </div>
+                            <h2>Andika Wiratana</h2>
+                            <p>
+                                <small>Software Engineer | Cybersecurity Enthusiast | Indie Game Dev</small><br>
+                                Denpasar, Bali<br>
+                                0895422644595<br>
+                                andikawiratana@gmail.com<br>
+                                andika-wiratana-7329571a0<br>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <footer>
+       <section id="footer">
+            <div class="background-container">
+                <div class="container">
+                    <div class="copyright">&copy; Andika Wiratana 2023</div>
+                </div>
+            </div>
+       </section> 
+    </footer>
+</body>
+<script src="script/script.js"></script>
+</html>

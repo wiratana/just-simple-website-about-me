@@ -1,0 +1,453 @@
+/* Simple Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    }
+    
+
+/* my variable */
+:root {
+    --bg-color: #141E46;
+    --sec-bg-color: #1c2a63;
+    --third-bg-color: #0b1128;
+    --fourth-bg-color: #060814;
+    /* --bg-color: #fff; */
+    --layer: #A5D7E8;
+    --side: #FF6969;
+    --effect: #576CBC;
+    --text: #f2f2f2;
+}
+
+.logo-button, nav ul li, .stack-menu{
+    margin: 10px;
+}
+
+/* My Global Class */
+/* Try new approach when we can chaining our class, just detect is specific combination string is available */
+/* flex-space-between will inherit first two rule of my global class */
+/* flex-space-between = display: flex; justify-content: space-between; */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+article{
+    color: var(--text);
+}
+
+[class*="flex"]{
+    display: flex;
+}
+
+[class*="space-between"]{
+    justify-content: space-between;
+}
+
+[class*="fwrap"]{
+    flex-wrap: wrap;
+}
+
+.w-100{width: 100%;}
+.w-75{width: 75%;}
+.w-50{width: 50%;}
+.w-33{width: 33.3%;}
+.w-25{width: 25%;}
+
+.responsive-image{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.common-border{
+    border: 3px solid #FFF5E0;
+}
+
+/* Specific Target Mayde */
+header {
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    background-color: var(--sec-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mobile-nav{
+    display: none;
+    transition: .7s;
+}
+
+nav ul > li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: .7s;
+}
+nav a:hover{
+    color: #fff;
+    font-size: 16px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav .stack-menu{
+    display: none;
+}
+
+.logo-button{
+    font-weight: 700;
+}
+
+#content {
+    transition: .7s;
+}
+
+aside {
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: .7s;
+    overflow: hidden;
+    opacity: 1;
+    padding: 10px;
+    margin: 0 auto 10px;
+}
+
+.hide-aside{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 100;
+}
+
+.hide-aside button{
+    background-color: var(--side);
+    padding: 10px;
+    width: 100%;
+    color: #f2f2f2;
+    transition: .7s;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.hide-aside button:hover{
+    scale: 1.1;
+}
+
+aside, #content{
+    padding-top: 100px;
+}
+
+#card-id{
+    background-color: var(--third-bg-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#card-id h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#card-id td{
+    padding: 1px;
+    font-size: 14px;
+}
+
+#card-id table{
+    padding-top: 10px;
+}
+
+
+
+.social-media-account {
+    padding-top: 15px;
+}
+
+.social-media-account > a{
+    padding: 5px;
+}
+
+#footer{
+    background-color: var(--fourth-bg-color);
+    margin: 0;
+}
+
+#hero{
+    padding: 50px 0;
+}
+
+#hero article{
+    position: relative;
+    padding-right: 10px;
+}
+
+#hero img{
+    border-radius: 10px;
+    border: 3px solid #FFF5E0;
+}
+
+#hero .container{
+    display: flex;
+    align-items: center;
+}
+
+#hero article{
+    position: relative;
+}
+
+#hero article, #about article{
+    background: rgb(187,37,37);
+    background: linear-gradient(90deg, rgba(187,37,37,1) 35%, rgba(255,105,105,1) 99%);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.title-devider{
+    display: block;
+    width: 25%;
+    height: 3px;
+    background-color: #FFF5E0;
+    z-index: 100;
+}
+
+#hero h2, #about h2{
+    font-size: 38px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+}
+
+#about{
+    padding: 50px 0;
+}
+
+#about .container{
+    display: flex;
+    align-items: center;
+}
+
+#about img{
+    border-radius: 10px;
+}
+
+#about article{
+    position: relative;
+    padding-left: 10px;
+}
+
+#project{
+    padding: 50px 0;
+}
+
+#project h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+#project article{
+    padding: 10px 10px 20px;
+}
+
+#project article .container{
+    transition: .7s;
+}
+
+#project article .container:hover{
+    scale: 1.05;
+}
+
+#project img{
+    border-radius: 10px 10px 0 0;
+}
+
+#project .text-container{
+    padding: 20px;
+    background-color: #FFF5E0;
+    border-radius: 0 0 10px 10px;
+    color: #060814;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#project .text-container > p:first-child{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+#project .project-button{
+    background-color: #FF6969;
+    text-decoration: none;
+    color: #0b1128;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: .7s;
+}
+
+#project .project-button:hover{
+    background-color: #BB2525;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#another {
+    margin-bottom: 20px;
+}
+#another h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+#another article{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+#another article img{
+    width: 100%;
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+#footer .copyright{
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 900px){
+    nav .container, 
+    main, 
+    footer .container{
+        width: 900px;
+    }    
+}
+
+@media screen and (min-width: 769px){
+    nav .container, 
+    main, 
+    footer .container{
+        width: 700px;
+        margin: 0 auto;
+    }    
+
+    .w-lg-100{width: 100%;}
+    .w-lg-75{width: 75%;}
+    .w-lg-50{width: 50%;}
+    .w-lg-33{width: 33.3%;}
+    .w-lg-25{width: 25%;}
+}
+
+@media screen and (max-width: 768px){
+    .w-sm-100{width: 100%;}
+    .w-sm-75{width: 75%;}
+    .w-sm-50{width: 50%;}
+    .w-sm-33{width: 33.3%;}
+    .w-sm-25{width: 25%;}
+    nav{
+        width: 100%;
+    }
+    nav .stack-menu{
+        display: block;
+        color: #f2f2f2;
+    }
+    nav .stack-menu:hover{
+        display: block;
+        color: #fff;
+    }
+    nav .container{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    .hide-aside{
+        display: none;
+    }
+
+    #hero .container{
+        flex-direction: column-reverse;
+    }
+    #about .container{
+        flex-direction: column;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #FFF5E0;
+        width: 100%;
+        overflow: auto;
+        transition: .7s;
+        opacity: 1;
+        z-index: 100;
+    }
+    .mobile-nav a{
+        color: #BB2525;
+    }
+    .mobile-nav a:hover{
+        color: #FF6969;
+    }
+    aside{
+        padding: 0;
+    }
+    #another article{
+        width: 50%;
+    }
+    #content{
+        width: 100%;
+        margin: 0 auto;
+    }
+    aside{
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+}
